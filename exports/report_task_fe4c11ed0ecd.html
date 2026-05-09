@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Analysis Report - Drone Flight A-001 Analysis</title>
+    <style>
+        body { font-family: 'Microsoft YaHei', Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        .section { margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 5px; }
+        .metric { display: inline-block; margin: 10px; padding: 10px; background: white; border-radius: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .metric-value { font-size: 24px; font-weight: bold; color: #3498db; }
+        .metric-label { font-size: 12px; color: #7f8c8d; }
+        table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .success { color: #27ae60; }
+        .warning { color: #f39c12; }
+        .error { color: #e74c3c; }
+        .summary-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .summary-box h2 { color: white; border-bottom: 2px solid rgba(255,255,255,0.3); }
+        .summary-item { margin: 15px 0; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 5px; }
+        .summary-item h3 { margin: 0 0 10px 0; font-size: 16px; }
+        .summary-item ul { margin: 5px 0; padding-left: 20px; }
+        .summary-item li { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>🚁 飞行分析报告</h1>
+    
+    <div class="section">
+        <h2>任务信息</h2>
+        <p><strong>任务ID:</strong> task_fe4c11ed0ecd</p>
+        <p><strong>任务名称:</strong> Drone Flight A-001 Analysis</p>
+        <p><strong>描述:</strong> Analyze coverage and accuracy</p>
+        <p><strong>状态:</strong> PLANNED</p>
+        <p><strong>创建时间:</strong> 2026-04-24 05:57:03</p>
+    </div>
+
+    <div class="section">
+        <h2>📊 覆盖分析</h2>
+        <div class="metric">
+            <div class="metric-value">0.0%</div>
+            <div class="metric-label">总覆盖率</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">0.0%</div>
+            <div class="metric-label">有效覆盖率</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">0.0 m²</div>
+            <div class="metric-label">盲区面积</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">HIGH</div>
+            <div class="metric-label">均匀性</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎯 精度分析</h2>
+        <div class="metric">
+            <div class="metric-value">0.00 m</div>
+            <div class="metric-label">轨迹偏差</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">0.00 m</div>
+            <div class="metric-label">高度偏差</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">0.00 km/h</div>
+            <div class="metric-label">速度偏差</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">0.0%</div>
+            <div class="metric-label">目标重叠率</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🛤️ 路线效率</h2>
+        <table>
+            <tr><th>指标</th><th>数值</th></tr>
+            <tr><td>实际距离</td><td>0.00 km</td></tr>
+            <tr><td>理论距离</td><td>0.00 km</td></tr>
+            <tr><td>利用率</td><td>0.0%</td></tr>
+            <tr><td>转弯次数</td><td>0</td></tr>
+            <tr><td>爬升/下降次数</td><td>0</td></tr>
+            <tr><td>悬停时间</td><td>0.0 min</td></tr>
+        </table>
+</div>
+    <div class="section">
+        <h2>⭐ 质量评分</h2>
+        <div class="metric">
+            <div class="metric-value error">0.0/100</div>
+            <div class="metric-label">总分</div>
+        </div>
+<table><tr><th>维度</th><th>得分</th><th>权重</th></tr><tr><td>精度质量</td><td>0.0</td><td>0.20</td></tr><tr><td>覆盖质量</td><td>0.0</td><td>0.20</td></tr><tr><td>路线效率</td><td>0.0</td><td>0.20</td></tr><tr><td>数据完整性</td><td>0.0</td><td>0.20</td></tr><tr><td>安全合规性</td><td>0.0</td><td>0.20</td></tr></table></div>
+    <div class="section">
+        <h2>💡 优化建议</h2>
+        <table>
+            <tr><th>优先级</th><th>维度</th><th>类型</th><th>建议内容</th></tr>
+<tr>
+                <td class="error"><strong>高</strong></td>
+                <td>数据完整性</td>
+                <td>数据补充</td>
+                <td>收集飞行数据 用于 任务_fe4c11ed0ecd 包括 时间戳, GPS坐标, 传感器读数, 和 任务状态.</td>
+            </tr>
+<tr>
+                <td class="error"><strong>高</strong></td>
+                <td>覆盖质量</td>
+                <td>路线变更</td>
+                <td>重新规划路线 以确保 完全覆盖 of 目标区域 基于 任务要求.</td>
+            </tr>
+<tr>
+                <td class="warning"><strong>中</strong></td>
+                <td>精度质量</td>
+                <td>参数调整</td>
+                <td>调整 GPS和IMU校准 parameters to 减少位置漂移 和 提高传感器精度.</td>
+            </tr>
+<tr>
+                <td class="warning"><strong>中</strong></td>
+                <td>路线效率</td>
+                <td>路线变更</td>
+                <td>优化飞行路径 to 减少冗余飞行段 和 减少总飞行时间.</td>
+            </tr>
+<tr>
+                <td class="error"><strong>高</strong></td>
+                <td>安全合规性</td>
+                <td>参数调整</td>
+                <td>启用自动 高度和速度限制, 和 集成避障协议.</td>
+            </tr>
+</table></div>
+    <div class="summary-box">
+        <h2>📋 智能总结</h2>
+        
+        <div class="summary-item">
+            <h3>🎯 总体评估</h3>
+            <p>当前任务 'Drone Flight A-001 Analysis' 尚未执行，所有分析维度（覆盖、精度、效率、数据完整性、安全合规）的评分均为0，表明缺乏实际飞行数据支持评估。系统已生成多项优化建议，需优先收集飞行数据并重新规划航线以提升后续任务质量。</p>
+        </div>
+        
+        <div class="summary-item">
+            <h3>🔍 关键发现</h3>
+            <ul>
+                <li>所有分析指标初始值为0，表明任务尚未执行或数据缺失。</li>
+                <li>系统识别出数据完整性、覆盖质量、精度质量、路径效率和安全合规五大维度均需提升。</li>
+                <li>高优先级建议包括补充飞行数据、重新规划航线、启用避障协议，以快速提升关键评分。</li>
+                <li>当前无低效飞行原因记录，但路径效率维度仍为0，暗示路径规划可能未优化。</li>
+                <li>安全合规维度需优先提升，以确保未来飞行符合监管要求。</li>
+            </ul>
+        </div>
+        
+        <div class="summary-item">
+            <h3>✅ 优势</h3>
+            <ul>
+                <li>系统已自动识别并分类优化建议，覆盖数据补充、路径优化、参数调整和安全增强四大方向。</li>
+                <li>建议具有明确目标维度和预期效果，便于后续执行跟踪。</li>
+                <li>高优先级建议聚焦于数据采集和安全合规，符合任务执行前准备的核心需求。</li>
+            </ul>
+        </div>
+        
+        <div class="summary-item">
+            <h3>⚠️ 待改进领域</h3>
+            <ul>
+                <li>缺乏实际飞行数据，导致所有分析维度评分无效。</li>
+                <li>覆盖质量与数据完整性评分均为0，表明目标区域未被有效覆盖或数据未完整记录。</li>
+                <li>路径效率未被验证，可能存在冗余或未优化的飞行路径。</li>
+                <li>安全合规维度需立即提升，以避免未来飞行风险。</li>
+                <li>精度质量评分未达标，可能需校准传感器或优化飞行参数。</li>
+            </ul>
+        </div>
+        
+        <div class="summary-item">
+            <h3>💡 建议</h3>
+            <ul>
+                <li>立即执行高优先级数据采集任务，收集飞行时间戳、GPS坐标、传感器读数等，以提升数据完整性评分。</li>
+                <li>重新规划飞行路线，确保目标区域全覆盖，并减少冗余路径，以提升覆盖质量和路径效率评分。</li>
+                <li>启用自动高度/速度限制与避障协议，同时校准GPS和IMU参数，以提升安全合规与精度质量评分。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <p style="text-align: center; color: #7f8c8d; margin-top: 40px;">
+            <em>报告由 Analysis Agent System 生成 | 2026-04-28 09:23:02</em>
+        </p>
+    </div>
+</body>
+</html>
